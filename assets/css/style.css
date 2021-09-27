@@ -10,7 +10,17 @@ body {
     font-family: "Nunito", sans-serif;
 }
 
-/* heading and intro-text*/
+/*heading logos*/
+
+#home-button {
+    float: left;
+}
+
+#highscore-button {
+    float: right;
+}
+
+/* title and intro-text*/
 
 #title-home {
     width: 60vw;
