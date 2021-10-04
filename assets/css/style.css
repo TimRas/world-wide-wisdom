@@ -10,7 +10,12 @@ body {
     font-family: "Nunito", sans-serif;
 }
 
-/*heading logos*/
+/*header and heading logos*/
+
+header {
+    height: 2em;
+    width: 100vw;
+}
 
 #home-button {
     float: left;
@@ -70,3 +75,62 @@ body {
     align-items: center;
 }
 
+/* hearth and circle counter*/
+
+.heart {
+    display: inline;
+}
+
+.circle {
+    display: inline;    
+}
+
+#counters {
+    display: flex;
+    gap: 37%;
+    width: 100vw;
+    margin-top: 2em;
+}
+
+/* country flag and question*/
+
+#country-flag {
+    height: 10em;
+    width: 10em;
+    padding: 1%;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    background-color: grey;
+}
+
+#main-question {
+    height: 8em;
+    width: 70em;
+    padding: 1%;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    background-color: grey;
+}
+
+#question-container {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+/*question buttons*/
+
+#button-container {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.button-question {
+    height: 8em;
+    width: 50em;
+    margin: auto;
+}
