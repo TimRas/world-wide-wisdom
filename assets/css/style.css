@@ -134,3 +134,35 @@ header {
     width: 50em;
     margin: auto;
 }
+
+/*highscore header*/
+
+#highscore-heading {
+
+    width: 25em;
+    margin: auto;
+    text-align: center;
+    margin-top: 0.5em;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 3em;
+}
+
+/*highscore content*/
+
+#highscore-wrap {
+    max-height: 40em;
+    width: 35em;
+    margin: auto;
+    margin-top: 1em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.player-wrap { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
