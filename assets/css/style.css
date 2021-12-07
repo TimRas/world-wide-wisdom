@@ -6,9 +6,11 @@
     border: none;
 }
 
+
 body {
     font-family: "Nunito", sans-serif;
 }
+
 
 /*header and heading logos*/
 
@@ -58,6 +60,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 6em;
 }
 
 /* start button*/
@@ -155,8 +158,8 @@ header {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     background-size: cover;
     z-index: -1;
 }
@@ -175,5 +178,5 @@ header {
 .player-wrap { 
     display: flex;
     flex-direction: row;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
