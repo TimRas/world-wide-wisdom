@@ -61,6 +61,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 6em;
+    margin-top: 7em;
 }
 
 /* start button*/
@@ -70,12 +71,16 @@ header {
     width: 20em;
     border-radius: 50%;
     margin-top: 7em;
+    border-style: groove;
+    background-color: #1565c0;
 }
 
 #button-div {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 10em;
+    margin-top: 5em;
 }
 
 /* hearth and circle counter*/
