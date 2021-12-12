@@ -33,7 +33,7 @@ header {
     width: 60vw;
     height: 3em;
     margin: auto;
-    padding-top: 1.5em;
+    padding-top: 1em;
     text-align: center;
     color: white;
 }
@@ -45,6 +45,7 @@ header {
     width: 60vw;
     height: 2em;
     margin: auto;
+    margin-top: 1em;
     text-align: center;
     color: white;
 }
@@ -55,6 +56,9 @@ header {
     width: 15em;
     height: 5em;
     border-style: groove;
+    border-color: black;
+    background-color: #002171;
+    color: white;
     margin-top: 7em;
 }
 
@@ -66,6 +70,10 @@ header {
     margin-top: 7em;
 }
 
+#highscore-text {
+    font-size: 200%;
+}
+
 /* start button*/
 
 #start-button {
@@ -74,7 +82,10 @@ header {
     border-radius: 50%;
     margin-top: 7em;
     border-style: groove;
-    background-color: #1565c0;
+    border-color: black;
+    background-color: #002171;
+    color: white;
+    
 }
 
 #button-div {
@@ -82,7 +93,11 @@ header {
     justify-content: center;
     align-items: center;
     height: 10em;
-    margin-top: 5em;
+    margin-top: 9em;
+}
+
+#start-text {
+    font-size: 250%;
 }
 
 /* hearth and circle counter*/
