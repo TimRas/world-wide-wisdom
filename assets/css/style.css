@@ -114,6 +114,34 @@ header {
     margin-top: 2em;
 }
 
+/* questions counter and gamer name*/
+
+#counter-container {
+    height: 3em;
+    width: 100vw;
+}
+
+#gamer-name {
+    height: 2em;
+    height: 10em;
+    border-style: groove;
+    border-color: black;
+    background-color: grey;
+    color: white;
+    float: left;
+    margin-left: 3em;
+}
+
+#questions-counter {
+    height: 2em;
+    border-style: groove;
+    border-color: black;
+    background-color: grey;
+    color: white;
+    float: right;
+    margin-right: 4em;
+}
+
 /* country flag and question*/
 
 #country-flag {
