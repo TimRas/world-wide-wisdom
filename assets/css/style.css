@@ -212,13 +212,18 @@ header {
 
 #highscore-heading {
 
-    width: 25em;
+    width: 15em;
     margin: auto;
     text-align: center;
     margin-top: 0.5em;
+    border-style: groove;
+    border-color: black;
+    background: grey;
+    color: white;
 
     font-family: "Poppins", sans-serif;
     font-size: 3em;
+
 }
 
 /*highscore content*/
@@ -249,4 +254,9 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-style: groove;
+    border-color: black;
+    background: grey;
+    color: white;
+    font-size: x-large;
 }
