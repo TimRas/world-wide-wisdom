@@ -20,14 +20,24 @@ header {
     margin-top: 10px;
 }
 
-.menu {
+#menu {
     float: right;
     margin-right: 3vw;
 }
 
-.menu li {
+#menu li {
     margin: 0.6em;
     display: inline;
+    font-size: large;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid white;
 }
 
 #home-button {
