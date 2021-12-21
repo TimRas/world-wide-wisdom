@@ -51,17 +51,19 @@ header {
 /* title and intro-text*/
 
 #title-home {
+    font-family: "Poppins",sans-serif;
     width: 60vw;
     height: 3em;
     margin: auto;
     padding-top: 1em;
     text-align: center;
     color: white;
+    font-weight: 800;
 }
 
 #intro-text {
-    font-family: "Poppins", sans-serif;
     font-size: large;
+    font-weight: 800;
 
     width: 60vw;
     height: 2em;
@@ -82,6 +84,7 @@ header {
     background-color: gray;
     color: white;
     margin-top: 7em;
+    font-weight: 800;
 }
 
 #highscore-div {
@@ -107,6 +110,7 @@ header {
     border-color: black;
     background-color: gray;
     color: white;
+    font-weight: 800;
     
 }
 
@@ -267,6 +271,7 @@ header {
     border-radius: 15px 50px;
     background: grey;
     color: white;
+    font-weight: 800;
 
     font-family: "Poppins", sans-serif;
     font-size: 3em;
@@ -300,11 +305,12 @@ header {
 .player-wrap { 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     border-style: groove;
     border-color: black;
     border-radius: 50px;
     background: grey;
     color: white;
     font-size: x-large;
+    font-weight: 800;
 }
