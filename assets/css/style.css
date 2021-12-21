@@ -155,6 +155,7 @@ header {
     float: left;
     margin-left: 2.5em;
     text-align: center;
+    font-family: "Poppins",sans-serif;
 }
 
 #questions-counter {
@@ -168,31 +169,40 @@ header {
     float: right;
     margin-right: 2.5em;
     text-align: center;
+    font-family: "Poppins", sans-serif;
 }
 
 /* country flag and question*/
 
 #country-flag {
-    height: 8em;
-    width: 8em;
+    height: 6em;
+    width: 6em;
     padding: 1%;
-    margin-right: 2em;
     margin-top: -1em;
     border-radius: 15px 50px;
     border-style: groove;
     border-color: black;
     background-color: grey;
+
+    background: url(../images/question-photo.jpg) no-repeat center center; 
+    background-size: cover;
+
 }
 
 #main-question {
-    height: 6em;
+    height: 2em;
     width: 60em;
     padding: 1%;
-    margin-right: 15em;
+    margin-right: 7em;
     border-style: groove;
     border-color: black;
     background-color: grey;
+    color: white;
     border-radius: 15px 50px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 120%;
+    font-family: "Poppins", sans-serif;
 }
 
 #question-container {
@@ -211,14 +221,16 @@ header {
 }
 
 .button-question {
-    height: 7em;
-    width: 60em;
+    height: 5em;
+    width: 50em;
     margin: auto;
     background-color: grey;
     border-style: groove;
     border-color: black;
     border-radius: 50px;
-    margin-top: .5em;
+    margin-top: 1.5em;
+    font-weight: 600;
+    color: white;
 }
 
 /* restart/quit button*/
@@ -237,7 +249,9 @@ header {
     border-color: black;
     border-radius: 50px;
     background-color: grey;
-
+    margin-top: 4em;
+    color: white;
+    font-weight: 600;
 }
 
 /*highscore header*/
