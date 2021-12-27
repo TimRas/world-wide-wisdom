@@ -48,6 +48,10 @@ header {
     float: right;
 }
 
+.active {
+    border-bottom: 1px solid white;
+}
+
 /* title and intro-text*/
 
 #title-home {
@@ -83,8 +87,6 @@ header {
     border-radius: 15px 50px;
     background-color: gray;
     color: white;
-    margin-top: 7em;
-    font-weight: 800;
 }
 
 #highscore-div {
@@ -92,7 +94,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 6em;
-    margin-top: 7em;
+    margin-top: 5em;
 }
 
 #highscore-text {
@@ -110,7 +112,7 @@ header {
     border-color: black;
     background-color: gray;
     color: white;
-    font-weight: 800;
+
     
 }
 
@@ -305,7 +307,7 @@ header {
 .player-wrap { 
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     border-style: groove;
     border-color: black;
     border-radius: 50px;
