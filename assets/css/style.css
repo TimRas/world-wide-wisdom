@@ -55,7 +55,7 @@ header {
 /* title and intro-text*/
 
 #title-home {
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     width: 60vw;
     height: 3em;
     margin: auto;
@@ -101,6 +101,10 @@ header {
     font-size: 200%;
 }
 
+#instruction-text {
+    font-size: 200%;
+}
+
 /* start button*/
 
 #start-button {
@@ -113,7 +117,7 @@ header {
     background-color: gray;
     color: white;
 
-    
+
 }
 
 #button-div {
@@ -161,7 +165,7 @@ header {
     float: left;
     margin-left: 2.5em;
     text-align: center;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 #questions-counter {
@@ -190,7 +194,7 @@ header {
     border-color: black;
     background-color: grey;
 
-    background: url(../images/question-photo.jpg) no-repeat center center; 
+    background: url(../images/question-photo.jpg) no-repeat center center;
     background-size: cover;
 
 }
@@ -304,7 +308,7 @@ header {
     justify-content: space-evenly;
 }
 
-.player-wrap { 
+.player-wrap {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -315,4 +319,106 @@ header {
     color: white;
     font-size: x-large;
     font-weight: 800;
+}
+
+.instruction-toggle {
+    display: none;
+    padding: 10rem;
+    font-size: large;
+    color: white;
+}
+
+/*back button*/
+
+#back {
+    width: 15em;
+    height: 5em;
+    border-style: groove;
+    border-color: black;
+    border-radius: 15px 50px;
+    background-color: gray;
+    color: white;
+}
+
+#back-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6em;
+    margin-top: 5em;
+}
+
+#back-text {
+    font-size: 200%;
+}
+
+#back-text {
+    font-size: 200%;
+}
+
+/*Modal*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* next button (copy of button-div) */
+  #next-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10em;
+    margin-top: 9em;
+}
+
+/* enter name label + field */
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+
+.name-field{
+    border: black;
+    border-style: solid;
+    height: 2rem;
+    padding: 0.4rem;
+    width: 16rem;
 }
