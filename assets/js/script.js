@@ -7,7 +7,8 @@ var startButton = document.getElementById("button-div");
 var nextButton = document.getElementById("next-div");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var spanInstruction = document.getElementById("closeInstruction");
+var spanEnterName = document.getElementById("closeEnterName");
 
 // Get the namefield that opens the modal
 var nameField = document.getElementById("namefield-div hier ofz");
@@ -29,9 +30,15 @@ nextButton.onclick = function () {
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function () {
+spanInstruction.onclick = function () {
     myModalInstruction.style.display = "none";
 }
+
+spanEnterName.onclick = function () {
+    myModalEnterName.style.display = "none";
+}
+
+
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
