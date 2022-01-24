@@ -5,16 +5,32 @@ var myModalEnterName = document.getElementById("myModalEnterName");
 // Get the button that opens the modal
 var startButton = document.getElementById("button-div");
 var nextButton = document.getElementById("next-div");
+var confirmNameButton = document.getElementById("confirm-button-div");
 
 // Get the <span> element that closes the modal
 var spanInstruction = document.getElementById("closeInstruction");
-var spanEnterName = document.getElementById("closeEnterName");
+var spanEnterName = document.getElementById("close-enter-name");
 
 // Get the namefield that opens the modal
-var nameField = document.getElementById("namefield-div hier ofz");
+var nameField = document.getElementById("namefieldid");
+
+// Gets gamer-name div
+var myGamerName = document.getElementById("gamer-name");
+
+var myGameBody = document.getElementById("game-body");
 
 // Nieuwe Let aanmaken
-let nameFieldValue = '';
+let nameFieldValue = "";
+
+// Enters name value in gamer-name div when pressed start
+confirmNameButton.onclick = function () {
+    localStorage.setItem("gamername",nameField.value);
+}
+// Puts value of confirm-button-div is gamer-name div
+function setGamerName() {
+    myGamerName.innerHTML = localStorage.getItem("gamername");
+    console.log(localStorage.getItem("gamername"));
+}
 
 // When the user clicks on the button, open the modal
 startButton.onclick = function () {
