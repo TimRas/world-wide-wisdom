@@ -52,7 +52,7 @@ nameField.onkeydown = function () {
 
 const questionBank = [
     {
-        question : "Who was the person to travel to space?"
+        question : "Who was the person to travel to space?",
         answers : {
             a : "Yuri Alekseyevich Gagarin",
             b : "Neil Armstrong",
@@ -61,7 +61,7 @@ const questionBank = [
         correctAnswer : "Yuri Alekseyevich Gagarin"
     },
     {
-        question : "What was the first animal to travel to space?"
+        question : "What was the first animal to travel to space?",
         answers : {
             a : "Mika the monkey",
             b : "Olaf the chimp",
@@ -70,7 +70,7 @@ const questionBank = [
         correctAnswer : "Laika the dog"
     },
     {
-        question : "What is the biggest planet in our solar system?"
+        question : "What is the biggest planet in our solar system?",
         answers : {
             a : "Saturn",
             b : "Uranus",
@@ -79,7 +79,7 @@ const questionBank = [
         correctAnswer : "Jupiter"
     },
     {
-        question : "How long does the earth takes to complete its rotation around the sun?"
+        question : "How long does the earth takes to complete its rotation around the sun?",
         answers : {
             a : "24 hours",
             b : "365 days",
@@ -88,7 +88,7 @@ const questionBank = [
         correctAnswer : "365 days"
     },
     {
-        question : "How many people have been to the moon?"
+        question : "How many people have been to the moon?",
         answers : {
             a : "12 people",
             b : "24 people",
@@ -97,7 +97,7 @@ const questionBank = [
         correctAnswer : "12 people"
     },
     {
-        question : "What is the smallest planet in our solar system?"
+        question : "What is the smallest planet in our solar system?",
         answers : {
             a : "Mars",
             b : "Earth",
@@ -106,7 +106,7 @@ const questionBank = [
         correctAnswer : "Mercury"
     },
     {
-        question : "How many miles do you need to go upwards to reach space?"
+        question : "How many miles do you need to go upwards to reach space?",
         answers : {
             a : "34 miles",
             b : "62 miles",
@@ -115,7 +115,7 @@ const questionBank = [
         correctAnswer : "62 miles"
     },
     {
-        question : "Which country was to first to reach space?"
+        question : "Which country was to first to reach space?",
         answers : {
             a : "Soviet Union",
             b : "United States",
@@ -124,7 +124,7 @@ const questionBank = [
         correctAnswer : "Soviet Union"
     },
     {
-        question : "which of these planets is a gas planet?"
+        question : "which of these planets is a gas planet?",
         answers : {
             a : "Mars",
             b : "Saturn",
@@ -133,7 +133,7 @@ const questionBank = [
         correctAnswer : "Saturn"
     },
     {
-        question : "How many moons does Jupiter have?"
+        question : "How many moons does Jupiter have?",
         answers : {
             a : "79 moons",
             b : "4 moons",
@@ -142,7 +142,7 @@ const questionBank = [
         correctAnswer : "79 moons"
     },
     {
-        question : "Which planet orbits the Sun the fastest?"
+        question : "Which planet orbits the Sun the fastest?",
         answers : {
             a : "Mars",
             b : "Earth",
@@ -151,7 +151,7 @@ const questionBank = [
         correctAnswer : "Mercury"
     },
     {
-        question : "Which planet has the least amount of moons orbiting it?"
+        question : "Which planet has the least amount of moons orbiting it?",
         answers : {
             a : "Earth",
             b : "Venus",
@@ -160,7 +160,7 @@ const questionBank = [
         correctAnswer : "venus"
     },
     {
-        question : "Which planet is closest to the Sun?"
+        question : "Which planet is closest to the Sun?",
         answers : {
             a : "Venus",
             b : "Mars",
@@ -169,7 +169,7 @@ const questionBank = [
         correctAnswer : "Mercury"
     },
     {
-        question : "What's the oldest planet in our solar system?"
+        question : "What's the oldest planet in our solar system?",
         answers : {
             a : "Mercury",
             b : "Jupiter",
@@ -178,7 +178,7 @@ const questionBank = [
         correctAnswer : "Jupiter"
     },
     {
-        question : "How many miles are there between the Earth and the Sun?"
+        question : "How many miles are there between the Earth and the Sun?",
         answers : {
             a : "93 million miles",
             b : "48 million miles",
@@ -187,7 +187,7 @@ const questionBank = [
         correctAnswer : "93 million miles"
     },
     {
-        question : "How many females have been to space?"
+        question : "How many females have been to space?",
         answers : {
             a : "32 women",
             b : "65 women",
