@@ -94,7 +94,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 6em;
-    margin-top: 5em;
+    margin-top: 2em;
 }
 
 #highscore-text {
@@ -110,8 +110,8 @@ header {
 #start-button {
     height: 6em;
     width: 20em;
+    margin-top: 1em;
     border-radius: 50px;
-    margin-top: 7em;
     border-style: groove;
     border-color: black;
     background-color: gray;
@@ -125,7 +125,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 10em;
-    margin-top: 9em;
+    margin-top: 14em;
 }
 
 #start-text {
@@ -373,11 +373,16 @@ header {
   
   /* Modal Content/Box */
   .modal-content {
-    background-color: #fefefe;
+    background-color: #061727;
+    color: white;
     margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    padding: 15px;
+    width: 40%; /* Could be more or less, depending on screen size */
+    height: 50%;
+    text-align: center;
+    line-height: 2.5em;
+    font-family: "Poppins", sans-serif;
+
   }
   
   /* The Close Button */
@@ -390,24 +395,25 @@ header {
   
   .close:hover,
   .close:focus {
-    color: black;
     text-decoration: none;
     cursor: pointer;
   }
 
-  /* next button (copy of button-div) */
+  /* next button (copy of button-div)
   #next-div {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 10em;
     margin-top: 9em;
-}
+} */
 
 /* enter name label + field */
 label {
     display: block;
-    font: 1rem 'Fira Sans', sans-serif;
+    font-size: x-large;
+    font-family: "Poppins", sans-serif;
+    
 }
 
 input,
@@ -421,4 +427,10 @@ label {
     height: 2rem;
     padding: 0.4rem;
     width: 16rem;
+    margin-top: 3em;
+    font-size: x-large;
+}
+
+#confirm-button-div {
+    margin-top: 5em;
 }
