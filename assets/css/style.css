@@ -116,8 +116,11 @@ header {
     border-color: black;
     background-color: gray;
     color: white;
+}
 
-
+#start-button a {
+    text-decoration: none;
+    color: white;
 }
 
 #button-div {
@@ -166,6 +169,11 @@ header {
     margin-left: 2.5em;
     text-align: center;
     font-family: "Poppins", sans-serif;
+    line-height: 2em;
+}
+
+#gamer-name p {
+    font-size: 3em;
 }
 
 #questions-counter {
@@ -180,6 +188,7 @@ header {
     margin-right: 2.5em;
     text-align: center;
     font-family: "Poppins", sans-serif;
+    line-height: 2em;
 }
 
 /* country flag and question*/
@@ -432,5 +441,5 @@ label {
 }
 
 #confirm-button-div {
-    margin-top: 5em;
+    margin-top: 6.2em;
 }
