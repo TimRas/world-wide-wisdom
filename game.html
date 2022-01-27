@@ -10,7 +10,7 @@
     <title>Game | EYM</title>
 </head>
 
-<body id="game-body" onload="setGamerName();getNewQuestion()" >
+<body id="game-body" onload="setGamerName();parseQuestionBank();">
     <div class="page-wrap">
         <img src="assets/images/game-photo.jpg" alt="">
 
@@ -55,11 +55,11 @@
 
         <section>
             <div id="button-container">
-                <button class="button-question"> 24 hours
+                <button id="first-answer" class="button-question"> 24 hours
                 </button>
-                <button class="button-question"> 15 months
+                <button id="second-answer"class="button-question"> 15 months
                 </button>
-                <button class="button-question"> 365 days
+                <button id="third-answer" class="button-question"> 365 days
                 </button>
             </div>
         </section>
