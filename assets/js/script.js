@@ -27,6 +27,9 @@ var firstAnswer = document.getElementById("first-answer");
 var secondAnswer = document.getElementById("second-answer");
 var thirdAnswer = document.getElementById("third-answer");
 
+// Tracks current question
+var currentQuestion;
+
 // Nieuwe Let aanmaken
 let nameFieldValue = "";
 
@@ -46,6 +49,7 @@ function setGamerName() {
 
 function getNewQuestion() {
    var randomQuestionIndex = randomIntBetween(0,questionLibrary.length - 1);
+   currentQuestion = randomQuestionIndex;
    console.log(questionLibrary.length);
    var questionObject = questionLibrary[randomQuestionIndex];
    console.log(questionObject);
@@ -72,6 +76,16 @@ function parseQuestionBank() {
 function randomIntBetween(min,max) {
     return Math.floor(Math.random()*(max - min + 1) + min);
 }
+
+firstAnswer.onclick = function() {
+    var question = questionLibrary[currentQuestion];
+    if ( "a" === question.correctAnswer) {
+        alert("That's the right answer!");
+        }   else() {
+                alert("That's the wrong answer, the answer is ${correctAnswer}");
+            }
+    }
+
 // When the user clicks on the button, open the modal
 startButton.onclick = function () {
     if (nameFieldValue != '') {
