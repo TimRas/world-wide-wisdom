@@ -27,6 +27,8 @@ var firstAnswer = document.getElementById("first-answer");
 var secondAnswer = document.getElementById("second-answer");
 var thirdAnswer = document.getElementById("third-answer");
 
+var myFirstAnswer;
+
 // Tracks current question
 var currentQuestion;
 
@@ -47,6 +49,11 @@ function setGamerName() {
     console.log(localStorage.getItem("gamername"));
 }
 
+// myFirstAnswer.addEventListener("click", checkAnswerA);
+
+// myFirstAnswer.onclick = checkAnswerA();
+
+
 function getNewQuestion() {
    var randomQuestionIndex = randomIntBetween(0,questionLibrary.length - 1);
    currentQuestion = randomQuestionIndex;
@@ -55,8 +62,12 @@ function getNewQuestion() {
    console.log(questionObject);
    myMainQuestion.innerHTML = questionObject.question;
    firstAnswer.innerHTML = questionObject.answers.a;
+   myFirstAnswer = firstAnswer.innerHTML;
    secondAnswer.innerHTML = questionObject.answers.b;
    thirdAnswer.innerHTML = questionObject.answers.c;
+   
+//    myFirstAnswer.onclick = checkAnswerA();
+//    checkAnswerA();
 }
 
 function parseQuestionBank() {
@@ -77,14 +88,34 @@ function randomIntBetween(min,max) {
     return Math.floor(Math.random()*(max - min + 1) + min);
 }
 
-firstAnswer.onclick = function() {
+firstAnswer.addEventListener('click', checkAnswerA()); {
     var question = questionLibrary[currentQuestion];
-    if ( "a" === question.correctAnswer) {
+    if ("a" === question.correctAnswer) {
         alert("That's the right answer!");
-        }   else() {
-                alert("That's the wrong answer, the answer is ${correctAnswer}");
-            }
+    } else {
+        alert(`That's the wrong answer, the answer is ${correctAnswer}`);
     }
+}
+
+// function checkAnswerA (firstAnswer.addEventListener("onclick", function() {
+//     var question = questionLibrary[currentQuestion];
+//     if ("a" === question.correctAnswer) {
+//         alert("That's the right answer!");
+//     } else {
+//         alert("That's the wrong answer, the answer is ${correctAnswer}");
+//     }
+    	
+// });
+
+
+// firstAnswer = function CheckAnswerA() {
+//     var question = questionLibrary[currentQuestion];
+//     if ("a" === question.correctAnswer) {
+//         alert("That's the right answer!");
+//     } else {
+//         alert("That's the wrong answer, the answer is ${correctAnswer}");
+//     }
+// }
 
 // When the user clicks on the button, open the modal
 startButton.onclick = function () {
