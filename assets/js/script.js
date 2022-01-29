@@ -17,13 +17,14 @@ var nameField = document.getElementById("namefieldid");
 // Gets gamer-name div
 var myGamerName = document.getElementById("gamer-name");
 
-var myGameBody = document.getElementById("game-body");
-
 //Gets counter div
 var questionCounter = document.getElementById("questions-counter");
 
 // Gets main question div
 var myMainQuestion = document.getElementById("main-question");
+
+//Gets highscore body
+var myHighscoreBody = document.getElementById("highscore-body");
 
 // Gets answer buttons
 var firstAnswer = document.getElementById("first-answer");
@@ -46,6 +47,11 @@ var totalQuestionTracker = 1;
 
 var totalScoreTracker = 0;
 
+if (myHighscoreBody != undefined) {
+    myHighscoreBody.addEventListener('load',(event) => {
+        loadHighscores();
+    } )
+}
 
 // Enters name value in gamer-name div when pressed start
 confirmNameButton.onclick = function () {
@@ -57,7 +63,8 @@ function setGamerName() {
 }
 
 function getNewQuestion() {
-    if (totalQuestionTracker === 11) {
+    if (totalQuestionTracker === 3) {
+        localStorage.setItem("score", totalScoreTracker);
         window.location = "highscore.html"
     } else {
         var randomQuestionIndex = randomIntBetween(0, questionLibrary.length - 1);
@@ -119,6 +126,45 @@ function activateButtons() {
         }
         getNewQuestion();
     };
+}
+
+function loadHighscores() {
+    console.log("hallo ah mattie");
+    var gamerName = localStorage.getItem("gamername");
+    var highScores = JSON.parse(localStorage.getItem("highscores"));
+    var gamerScore = localStorage.getItem("score");
+    console.log(highScores);
+    var highScoreEntry = {
+        "name": gamerName,
+        "score": gamerScore
+    };
+    if (highScores === undefined || highScores === null) {
+        highScores = [highScoreEntry];
+        console.log(highScores);
+    } else {
+        if (highScores.length < 10) {
+            highScores.push(highScoreEntry);
+            console.log(highScores);
+        } else {
+            // als score hoger is dan de score van nummer 10 voeg toe
+            if (gamerScore > highScores[9]) {
+                highScores.pop();
+                console.log(highScores);
+                highScores.push(highScoreEntry);
+            }
+        }
+    };
+    highScores.sort(function (a, b) {
+        return b.score - a.score;
+    });
+    localStorage.setItem("highscores", JSON.stringify(highScores));
+    console.log(highScores);
+    for (let step = 0; step < highScores.length; step++) {
+        var nameLabel = document.getElementById("name-wrap"+(step+1));
+        var scoreWrap = document.getElementById("score-wrap"+(step+1));
+        nameLabel.innerHTML = highScores[step].name;
+        scoreWrap.innerHTML = highScores[step].score;
+      }
 }
 
 // When the user clicks on the button, open the modal
