@@ -79,7 +79,8 @@ function activateButtons() {
             alert("That's the right answer!");
         } else {
             alert(`That's the wrong answer, the answer is ${question.correctAnswer}`);
-        }
+        } 
+        getNewQuestion();
     };
     secondAnswer.onclick = function () {
         var question = questionLibrary[currentQuestion];
@@ -88,6 +89,7 @@ function activateButtons() {
         } else {
             alert(`That's the wrong answer, the answer is ${question.correctAnswer}`);
         }
+        getNewQuestion();
     };
     thirdAnswer.onclick = function () {
         var question = questionLibrary[currentQuestion];
@@ -96,6 +98,7 @@ function activateButtons() {
         } else {
             alert(`That's the wrong answer, the answer is ${question.correctAnswer}`);
         }
+        getNewQuestion();
     };
 }
 
