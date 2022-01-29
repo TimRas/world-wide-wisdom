@@ -5,7 +5,8 @@
          "b": "Neil Armstrong",
          "c": "William E. Thornton"
      },
-     "correctAnswer": "Yuri Alekseyevich Gagarin"
+     "correctAnswer": "Yuri Alekseyevich Gagarin",
+     "correctChoice": "a"
  }, {
      "question": "What was the first animal to travel to space?",
      "answers": {
@@ -13,7 +14,8 @@
          "b": "Olaf the chimp",
          "c": "Laika the dog"
      },
-     "correctAnswer": "Laika the dog"
+     "correctAnswer": "Laika the dog",
+     "correctChoice": "c"
  }, {
 
      "question": "What is the biggest planet in our solar system?",
@@ -22,7 +24,8 @@
          "b": "Uranus",
          "c": "Jupiter"
      },
-     "correctAnswer": "Jupiter"
+     "correctAnswer": "Jupiter",
+     "correctChoice": "c"
  }, {
      "question": "How long does the earth takes to complete its rotation around the sun?",
      "answers": {
@@ -30,7 +33,8 @@
          "b": "365 days",
          "c": "15 months"
      },
-     "correctAnswer": "365 days"
+     "correctAnswer": "365 days",
+     "correctChoice": "b"
  }, {
      "question": "How many people have been to the moon?",
      "answers": {
@@ -38,7 +42,8 @@
          "b": "24 people",
          "c": "7 people"
      },
-     "correctAnswer": "12 people"
+     "correctAnswer": "12 people",
+     "correctChoice": "a"
  }, {
      "question": "What is the smallest planet in our solar system?",
      "answers": {
@@ -46,7 +51,8 @@
          "b": "Earth",
          "c": "Mercury"
      },
-     "correctAnswer": "Mercury"
+     "correctAnswer": "Mercury",
+     "correctChoice": "c"
  }, {
      "question": "How many miles do you need to go upwards to reach space?",
      "answers": {
@@ -54,7 +60,8 @@
          "b": "62 miles",
          "c": "103 miles"
      },
-     "correctAnswer": "62 miles"
+     "correctAnswer": "62 miles",
+     "correctChoice": "b"
  }, {
      "question": "Which country was to first to reach space?",
      "answers": {
@@ -62,7 +69,8 @@
          "b": "United States",
          "c": "China"
      },
-     "correctAnswer": "Soviet Union"
+     "correctAnswer": "Soviet Union",
+     "correctChoice": "a"
  }, {
      "question": "which of these planets is a gas planet?",
      "answers": {
@@ -70,7 +78,8 @@
          "b": "Saturn",
          "c": "Venus"
      },
-     "correctAnswer": "Saturn"
+     "correctAnswer": "Saturn",
+     "correctChoice": "b"
  }, {
      "question": "How many moons does Jupiter have?",
      "answers": {
@@ -78,7 +87,8 @@
          "b": "4 moons",
          "c": "12 moons"
      },
-     "correctAnswer": "79 moons"
+     "correctAnswer": "79 moons",
+     "correctChoice": "a"
  }, {
      "question": "Which planet orbits the Sun the fastest?",
      "answers": {
@@ -86,7 +96,8 @@
          "b": "Earth",
          "c": "Mercury"
      },
-     "correctAnswer": "Mercury"
+     "correctAnswer": "Mercury",
+     "correctChoice": "c"
  }, {
      "question": "Which planet has the least amount of moons orbiting it?",
      "answers": {
@@ -94,7 +105,8 @@
          "b": "Venus",
          "c": "Jupiter"
      },
-     "correctAnswer": "venus"
+     "correctAnswer": "venus",
+     "correctChoice": "b"
  }, {
      "question": "Which planet is closest to the Sun?",
      "answers": {
@@ -102,7 +114,8 @@
          "b": "Mars",
          "c": "Mercury"
      },
-     "correctAnswer": "Mercury"
+     "correctAnswer": "Mercury",
+     "correctChoice": "c"
  }, {
      "question": "What's the oldest planet in our solar system?",
      "answers": {
@@ -110,7 +123,8 @@
          "b": "Jupiter",
          "c": "Earth"
      },
-     "correctAnswer": "Jupiter"
+     "correctAnswer": "Jupiter",
+     "correctChoice": "b"
  }, {
      "question": "How many miles are there between the Earth and the Sun?",
      "answers": {
@@ -118,7 +132,8 @@
          "b": "48 million miles",
          "c": "142 million miles"
      },
-     "correctAnswer": "93 million miles"
+     "correctAnswer": "93 million miles",
+     "correctChoice": "a"
  }, {
      "question": "How many females have been to space?",
      "answers": {
@@ -126,5 +141,6 @@
          "b": "65 women",
          "c": "12 women"
      },
-     "correctAnswer": "65 women"
+     "correctAnswer": "65 women",
+     "correctChoice": "b"
  }]

@@ -27,8 +27,6 @@ var firstAnswer = document.getElementById("first-answer");
 var secondAnswer = document.getElementById("second-answer");
 var thirdAnswer = document.getElementById("third-answer");
 
-var myFirstAnswer;
-
 // Tracks current question
 var currentQuestion;
 
@@ -38,7 +36,6 @@ let nameFieldValue = "";
 var questionLibrary;
 
 
-
 // Enters name value in gamer-name div when pressed start
 confirmNameButton.onclick = function () {
     localStorage.setItem("gamername", nameField.value);
@@ -46,76 +43,61 @@ confirmNameButton.onclick = function () {
 // Puts value of confirm-button-div is gamer-name div
 function setGamerName() {
     myGamerName.innerHTML = localStorage.getItem("gamername");
-    console.log(localStorage.getItem("gamername"));
 }
 
-// myFirstAnswer.addEventListener("click", checkAnswerA);
-
-// myFirstAnswer.onclick = checkAnswerA();
-
-
 function getNewQuestion() {
-   var randomQuestionIndex = randomIntBetween(0,questionLibrary.length - 1);
-   currentQuestion = randomQuestionIndex;
-   console.log(questionLibrary.length);
-   var questionObject = questionLibrary[randomQuestionIndex];
-   console.log(questionObject);
-   myMainQuestion.innerHTML = questionObject.question;
-   firstAnswer.innerHTML = questionObject.answers.a;
-   myFirstAnswer = firstAnswer.innerHTML;
-   secondAnswer.innerHTML = questionObject.answers.b;
-   thirdAnswer.innerHTML = questionObject.answers.c;
-   
-//    myFirstAnswer.onclick = checkAnswerA();
-//    checkAnswerA();
+    var randomQuestionIndex = randomIntBetween(0, questionLibrary.length - 1);
+    currentQuestion = randomQuestionIndex;
+    var questionObject = questionLibrary[randomQuestionIndex];
+    myMainQuestion.innerHTML = questionObject.question;
+    firstAnswer.innerHTML = questionObject.answers.a;
+    secondAnswer.innerHTML = questionObject.answers.b;
+    thirdAnswer.innerHTML = questionObject.answers.c;
+    activateButtons();
 }
 
 function parseQuestionBank() {
-    fetch("assets/content/questionbank.JSON").then( storageFile =>
-        {
-            storageFile.json().then( questionArray => {
-                questionLibrary = questionArray;
-                getNewQuestion();   
-            });
-            
+    fetch("assets/content/questionbank.JSON").then(storageFile => {
+        storageFile.json().then(questionArray => {
+            questionLibrary = questionArray;
+            getNewQuestion();
+        });
 
+
+    });
+
+}
+
+function randomIntBetween(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+function activateButtons() {
+    firstAnswer.onclick = function () {
+        var question = questionLibrary[currentQuestion];
+        if ("a" === question.correctChoice) {
+            alert("That's the right answer!");
+        } else {
+            alert(`That's the wrong answer, the answer is ${question.correctAnswer}`);
         }
-    );
-    
-} 
-
-function randomIntBetween(min,max) {
-    return Math.floor(Math.random()*(max - min + 1) + min);
+    };
+    secondAnswer.onclick = function () {
+        var question = questionLibrary[currentQuestion];
+        if ("b" === question.correctChoice) {
+            alert("That's the right answer!");
+        } else {
+            alert(`That's the wrong answer, the answer is ${question.correctAnswer}`);
+        }
+    };
+    thirdAnswer.onclick = function () {
+        var question = questionLibrary[currentQuestion];
+        if ("c" === question.correctChoice) {
+            alert("That's the right answer!");
+        } else {
+            alert(`That's the wrong answer, the answer is ${question.correctAnswer}`);
+        }
+    };
 }
-
-firstAnswer.addEventListener('click', checkAnswerA()); {
-    var question = questionLibrary[currentQuestion];
-    if ("a" === question.correctAnswer) {
-        alert("That's the right answer!");
-    } else {
-        alert(`That's the wrong answer, the answer is ${correctAnswer}`);
-    }
-}
-
-// function checkAnswerA (firstAnswer.addEventListener("onclick", function() {
-//     var question = questionLibrary[currentQuestion];
-//     if ("a" === question.correctAnswer) {
-//         alert("That's the right answer!");
-//     } else {
-//         alert("That's the wrong answer, the answer is ${correctAnswer}");
-//     }
-    	
-// });
-
-
-// firstAnswer = function CheckAnswerA() {
-//     var question = questionLibrary[currentQuestion];
-//     if ("a" === question.correctAnswer) {
-//         alert("That's the right answer!");
-//     } else {
-//         alert("That's the wrong answer, the answer is ${correctAnswer}");
-//     }
-// }
 
 // When the user clicks on the button, open the modal
 startButton.onclick = function () {
@@ -125,6 +107,7 @@ startButton.onclick = function () {
         myModalInstruction.style.display = "block";
     }
 }
+
 nextButton.onclick = function () {
     myModalInstruction.style.display = "none";
     myModalEnterName.style.display = "block";
@@ -139,22 +122,9 @@ spanEnterName.onclick = function () {
     myModalEnterName.style.display = "none";
 }
 
-
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
     if (event.target == modal) {
         myModalInstruction.style.display = "none";
     }
 }
-
-//when the namefield is getting entered by the user onkeydown
-
-nameField.onkeydown = function () {
-    //sla hier de value van nameField op in de Let die je hebt aangemaakt nameFieldValue 
-}
-
-
-
-//question bank for the quiz
-
