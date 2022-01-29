@@ -42,6 +42,10 @@ var questionLibrary;
 
 var totalQuestionTracker = 1;
 
+//Tracks score
+
+var totalScoreTracker = 0;
+
 
 // Enters name value in gamer-name div when pressed start
 confirmNameButton.onclick = function () {
@@ -88,6 +92,7 @@ function activateButtons() {
     firstAnswer.onclick = function () {
         var question = questionLibrary[currentQuestion];
         if ("a" === question.correctChoice) {
+            totalScoreTracker++;
             alert("That's the right answer!");
         } else {
             alert(`That's the wrong answer, the answer is ${question.correctAnswer}`);
@@ -97,6 +102,7 @@ function activateButtons() {
     secondAnswer.onclick = function () {
         var question = questionLibrary[currentQuestion];
         if ("b" === question.correctChoice) {
+            totalScoreTracker++;
             alert("That's the right answer!");
         } else {
             alert(`That's the wrong answer, the answer is ${question.correctAnswer}`);
@@ -106,6 +112,7 @@ function activateButtons() {
     thirdAnswer.onclick = function () {
         var question = questionLibrary[currentQuestion];
         if ("c" === question.correctChoice) {
+            totalScoreTracker++;
             alert("That's the right answer!");
         } else {
             alert(`That's the wrong answer, the answer is ${question.correctAnswer}`);
