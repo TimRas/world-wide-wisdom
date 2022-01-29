@@ -19,6 +19,9 @@ var myGamerName = document.getElementById("gamer-name");
 
 var myGameBody = document.getElementById("game-body");
 
+//Gets counter div
+var questionCounter = document.getElementById("questions-counter");
+
 // Gets main question div
 var myMainQuestion = document.getElementById("main-question");
 
@@ -35,6 +38,10 @@ let nameFieldValue = "";
 
 var questionLibrary;
 
+//Tracks total amount of questions
+
+var totalQuestionTracker = 1;
+
 
 // Enters name value in gamer-name div when pressed start
 confirmNameButton.onclick = function () {
@@ -46,14 +53,19 @@ function setGamerName() {
 }
 
 function getNewQuestion() {
-    var randomQuestionIndex = randomIntBetween(0, questionLibrary.length - 1);
-    currentQuestion = randomQuestionIndex;
-    var questionObject = questionLibrary[randomQuestionIndex];
-    myMainQuestion.innerHTML = questionObject.question;
-    firstAnswer.innerHTML = questionObject.answers.a;
-    secondAnswer.innerHTML = questionObject.answers.b;
-    thirdAnswer.innerHTML = questionObject.answers.c;
-    activateButtons();
+    if (totalQuestionTracker === 11) {
+        window.location = "highscore.html"
+    } else {
+        var randomQuestionIndex = randomIntBetween(0, questionLibrary.length - 1);
+        currentQuestion = randomQuestionIndex;
+        var questionObject = questionLibrary[randomQuestionIndex];
+        myMainQuestion.innerHTML = questionObject.question;
+        firstAnswer.innerHTML = questionObject.answers.a;
+        secondAnswer.innerHTML = questionObject.answers.b;
+        thirdAnswer.innerHTML = questionObject.answers.c;
+        questionCounter.innerHTML = totalQuestionTracker++;
+        activateButtons();
+    }
 }
 
 function parseQuestionBank() {
@@ -79,7 +91,7 @@ function activateButtons() {
             alert("That's the right answer!");
         } else {
             alert(`That's the wrong answer, the answer is ${question.correctAnswer}`);
-        } 
+        }
         getNewQuestion();
     };
     secondAnswer.onclick = function () {
