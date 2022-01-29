@@ -15,7 +15,7 @@ var spanEnterName = document.getElementById("close-enter-name");
 var nameField = document.getElementById("namefieldid");
 
 // Gets gamer-name div
-var myGamerName = document.getElementById("gamer-name");
+var myGamerNameElement = document.getElementById("gamer-name");
 
 //Gets counter div
 var questionCounter = document.getElementById("questions-counter");
@@ -30,6 +30,10 @@ var myHighscoreBody = document.getElementById("highscore-body");
 var firstAnswer = document.getElementById("first-answer");
 var secondAnswer = document.getElementById("second-answer");
 var thirdAnswer = document.getElementById("third-answer");
+
+//Tracks already shown questions
+
+var shownQuestions = [];
 
 // Tracks current question
 var currentQuestion;
@@ -59,15 +63,19 @@ confirmNameButton.onclick = function () {
 }
 // Puts value of confirm-button-div is gamer-name div
 function setGamerName() {
-    myGamerName.innerHTML = localStorage.getItem("gamername");
+    myGamerNameElement.innerHTML = localStorage.getItem("gamername");
 }
 
 function getNewQuestion() {
-    if (totalQuestionTracker === 3) {
+    if (totalQuestionTracker === 11) {
         localStorage.setItem("score", totalScoreTracker);
         window.location = "highscore.html"
     } else {
         var randomQuestionIndex = randomIntBetween(0, questionLibrary.length - 1);
+        while (shownQuestions.includes(randomQuestionIndex)) { 
+            randomQuestionIndex =  randomIntBetween(0, questionLibrary.length - 1);
+        } 
+        shownQuestions.push(randomQuestionIndex);
         currentQuestion = randomQuestionIndex;
         var questionObject = questionLibrary[randomQuestionIndex];
         myMainQuestion.innerHTML = questionObject.question;
@@ -147,7 +155,7 @@ function loadHighscores() {
             console.log(highScores);
         } else {
             // als score hoger is dan de score van nummer 10 voeg toe
-            if (gamerScore > highScores[9]) {
+            if (gamerScore > highScores[9].score) {
                 highScores.pop();
                 console.log(highScores);
                 highScores.push(highScoreEntry);
