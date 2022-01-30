@@ -288,35 +288,8 @@ header {
     color: white;
 }
 
-/* back button
+/* /*Modal*/
 
-#back {
-    width: 15em;
-    height: 5em;
-    border-style: groove;
-    border-color: black;
-    border-radius: 15px 50px;
-    background-color: gray;
-    color: white;
-}
-
-#back-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 6em;
-    margin-top: 5em;
-}
-
-#back-text {
-    font-size: 200%;
-}
-
-#back-text {
-    font-size: 200%;
-}
- */
-/*Modal*/
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -359,15 +332,6 @@ header {
     cursor: pointer;
   }
 
-  /* next button (copy of button-div)
-  #next-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10em;
-    margin-top: 9em;
-} */
-
 /* enter name label + field */
 label {
     display: block;
@@ -393,4 +357,86 @@ label {
 
 #confirm-button-div {
     margin-top: 6.2em;
+}
+
+/* media queries */
+
+@media screen and (max-height: 750px) {
+    #intro-text {
+        font-size: medium;
+    }
+    #button-div {
+        margin-top: 10em;
+    }
+    #highscore-div {
+        margin-top: 2em;
+    }
+}
+
+@media screen and (max-height: 680px) {
+    #title-home {
+        font-size: medium;
+    }
+    #highscore-div {
+        margin-top: 1em;
+    }
+    #intro-text {
+        font-size: medium;
+        margin-top: 1em;
+    }
+    #button-div {
+        margin-top: 14em;
+    }
+    #start-button {
+        height: 5em;
+        width: 15em;
+    }
+    #start-text {
+        font-size: 200%;
+    }
+    #highscore {
+        height: 5em;
+        width: 12em;
+    }
+    #highscore-text {
+        font-size: 200%;
+    }
+}
+
+@media screen and (max-height: 640px) {
+    #highscore-div {
+        margin-top: 0;
+    }
+    #intro-text {
+        margin-top: 1em;
+    }
+    #button-div {
+        margin-top: 12em;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #intro-text {
+        font-size: small;
+    }
+    #title-home {
+        font-size: small;
+    }
+    #start-button {
+        height: 5em;
+        width: 10em;
+    }
+    #highscore {
+        height: 5em;
+        width: 8em;
+    }
+    #start-text {
+        font-size: 150%;
+    }
+    #highscore-text {
+        font-size: 130%;
+    }
+    #menu li {
+        font-size: small;
+    }
 }
