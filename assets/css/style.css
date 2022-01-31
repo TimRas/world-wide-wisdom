@@ -253,6 +253,7 @@ header {
     line-height: 2em;
 }
 
+
 /*highscore header*/
 
 #highscore-heading {
@@ -550,5 +551,76 @@ label {
     }
     #begin-game-button {
         width: 10em;
+    }
+}
+
+/* media queries from the game page*/
+
+
+@media screen and (max-width: 1200px) {
+    #main-question {
+        width: 40em;
+    }
+    .button-question {
+        width: 30em;
+    }
+    #gamer-name {
+        width: 8em;
+    }
+    #questions-counter {
+        width: 8em;
+    }
+    
+}
+
+@media  screen and (max-width: 850px) {
+    #main-question {
+        width: 30em;
+        font-size: medium;
+        height: 3em;
+    }
+    .button-question {
+        width: 20em;
+        height: 3em;
+    }
+    #gamer-name {
+        width: 6em;
+    }
+    #questions-counter {
+        width: 6em;
+    }
+    #button-container {
+        margin-top: 3em;
+    }
+
+}
+@media  screen and (max-width: 500px) {
+    #main-question {
+        width: 25em;
+        font-size: small;
+        height: 4em;
+    }
+    .button-question {
+        width: 15em;
+        height: 3em;
+        line-height: 1em;
+    }
+    #gamer-name {
+        width: 4em;
+    }
+    #questions-counter {
+        width: 4em;
+    }
+    
+}
+@media screen and (min-height:800px) {
+    #main-question {
+        margin-top: 6em;
+    }
+    .button-question {
+        margin-top: 4em;
+    }
+    #button-container {
+        margin-top: 6em;
     }
 }
