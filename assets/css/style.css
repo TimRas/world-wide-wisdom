@@ -105,7 +105,7 @@ header {
     font-size: 200%;
 }
 
-/* start button*/
+/* start button, next button and the button that begins the game*/
 
 #start-button {
     height: 6em;
@@ -118,7 +118,7 @@ header {
     color: white;
 }
 
-#start-button a {
+#begin-game-button a {
     text-decoration: none;
     color: white;
 }
@@ -135,6 +135,35 @@ header {
     font-size: 250%;
 }
 
+#next-button {
+    height: 6em;
+    width: 20em;
+    margin-top: 10em;
+    border-radius: 50px;
+    border-style: groove;
+    border-color: black;
+    background-color: gray;
+    color: white;
+}
+
+#next-text {
+    font-size: 250%;
+}
+
+#begin-game-button {
+    height: 6em;
+    width: 20em;
+    margin-top: 1em;
+    border-radius: 50px;
+    border-style: groove;
+    border-color: black;
+    background-color: gray;
+    color: white;
+}
+
+#begin-game-text {
+    font-size: 250%;
+}
 
 /* questions counter and gamer name*/
 
@@ -360,6 +389,7 @@ label {
 }
 
 /* media queries */
+/* home page*/
 
 @media screen and (max-height: 750px) {
     #intro-text {
@@ -438,5 +468,87 @@ label {
     }
     #menu li {
         font-size: small;
+    }
+}
+
+/* medias queries modals home page*/
+/* instructions modal*/
+
+@media screen and (max-width: 1200px) {
+    #next-button {
+        height: 5em;
+        width: 15em;
+        margin-top: 2em;
+    }
+}
+@media screen and (max-width:1600px) {
+    #next-button {
+        margin-top: 5em;
+    }
+}
+@media screen and (max-width: 990px) {
+    #next-button {
+        margin-top: 0em;
+    }
+} 
+
+@media screen and (max-width: 840px) {
+    .modal-content {
+        height: 70%;
+    }
+    #next-button {
+        margin-top: 3em;
+    }
+    
+}
+
+@media screen and (max-width: 650px) {
+    .modal-content p {
+        line-height: 2em;
+    }
+    #next-button {
+        margin-top: 3em;
+    }
+    
+}
+@media screen and (max-width: 520px) {
+    .modal-content p {
+        margin-top: 2em;
+    }
+    .modal-content {
+        height: 70%;
+        width: 70%;
+    }
+
+}
+
+/* enter name modal*/
+
+@media screen and (max-width: 850px) {
+    #enter-name-modal {
+        width: 50%;
+        height: 50%;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    #enter-name-modal label {
+        font-size: large;
+    }
+    #namefieldid {
+        width: 10rem;
+    }
+    #begin-game-button {
+        width: 15em;
+        height: 5em;
+    }
+    
+}
+@media screen and (max-height:720px) {
+    #confirm-button-div {
+        margin-top: 4em;
+    }
+    #begin-game-button {
+        width: 10em;
     }
 }
