@@ -508,6 +508,15 @@ label {
         margin-top: 5em;
     }
 }
+@media screen and (min-height:1100) {
+    #highscore {
+        margin-top: 3em;
+    }
+
+    #start-button {
+        margin-top: 3em;
+    }
+}
 
 /* Media queries modals home page*/
 /* Instructions modal*/
