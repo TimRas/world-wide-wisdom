@@ -1,61 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://kit.fontawesome.com/4fa053dcb7.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <title>Game | EYM</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/4fa053dcb7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Game | EYM</title>
-</head>
+    <body id="game-body" onload="setGamerName();parseQuestionBank();">
+        <div class="page-wrap">
+            <img src="assets/images/game-photo.jpg" alt="Another different picture from earth seen from space" />
 
-<body id="game-body" onload="setGamerName();parseQuestionBank();">
-    <div class="page-wrap">
-        <img src="assets/images/game-photo.jpg" alt="Another different picture from earth seen from space">
+            <header>
+                <nav>
+                    <ul id="menu">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="highscore.html">Highscore</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
-        <header>
-            <nav>
-                <ul id="menu">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="highscore.html">Highscore</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-        <section>
-            <div id="counter-container">
-                <div id="gamer-name"></div>
-                <div id="questions-counter"></div>
-            </div>
-        </section>
-
-        <section>
-            <div id="question-container">
-                <div id="main-question">
+            <section>
+                <div id="counter-container">
+                    <div id="gamer-name"></div>
+                    <div id="questions-counter"></div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <div id="button-container">
-                <button id="first-answer" class="button-question">
-                </button>
-                <button id="second-answer" class="button-question">
-                </button>
-                <button id="third-answer" class="button-question">
-                </button>
-            </div>
-        </section>
+            <section>
+                <div id="question-container">
+                    <div id="main-question"></div>
+                </div>
+            </section>
 
-    </div>
+            <section>
+                <div id="button-container">
+                    <button id="first-answer" class="button-question"></button>
+                    <button id="second-answer" class="button-question"></button>
+                    <button id="third-answer" class="button-question"></button>
+                </div>
+            </section>
+        </div>
 
-    <script src="assets/js/script.js"></script>
-</body>
-
-
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>
