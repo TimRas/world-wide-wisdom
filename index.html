@@ -1,85 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <script src="https://kit.fontawesome.com/4fa053dcb7.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="assets/css/style.css" />
-        <title>Home | EYM</title>
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <body>
-        <div class="page-wrap">
-            <img src="assets/images/homepage-photo.jpg" alt="Earth seen from space" />
+    <script src="https://kit.fontawesome.com/4fa053dcb7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Home | EYM</title>
+</head>
 
-            <header>
-                <nav>
-                    <ul id="menu">
-                        <li>
-                            <a href="index.html" class="active">Home</a>
-                        </li>
-                        <li>
-                            <a href="highscore.html">Highscore</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+<body>
+    <div class="page-wrap">
+        <img src="assets/images/homepage-photo.jpg" alt="Earth seen from space" />
 
-            <div class="screen-toggle">
-                <h1 id="title-home">Expand your mind</h1>
-                <div id="intro-text">
-                    This fun and challenging quiz will test your overall knowlegde of the great beyond. See how well you are able to determine which questions are right about this expanding phenomenom. Press the start button to begin the
-                    quiz. There will a pop-up that give you a quick instruction about the quiz and one that will ask you for your username. Have fun!
-                </div>
+        <header>
+            <nav>
+                <ul id="menu">
+                    <li>
+                        <a href="index.html" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="highscore.html">Highscore</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-                <div id="button-div">
-                    <button id="start-button">
-                        <div id="start-text">Start!</div>
-                    </button>
-                </div>
+        <div class="screen-toggle">
+            <h1 id="title-home">Expand your mind</h1>
+            <div id="intro-text">
+                This fun and challenging quiz will test your overall knowlegde of the great beyond. See how well you are
+                able to determine which questions are right about this expanding phenomenom. Press the start button to
+                begin the
+                quiz. There will a pop-up that give you a quick instruction about the quiz and one that will ask you for
+                your username. Have fun!
+            </div>
 
-                <div id="highscore-div">
+            <div id="button-div">
+                <button id="start-button">
+                    <h2 id="start-text">Start!</h2>
+                </button>
+            </div>
+
+            <div id="highscore-div">
+                <button id="highscore">
                     <a href="highscore.html">
-                        <button id="highscore">
-                            <div id="highscore-text">Highscore</div>
-                        </button>
+                        <h2 id="highscore-text">Highscore</h2>
                     </a>
-                </div>
+                </button>
             </div>
+        </div>
 
-            <div id="modal-instructions" class="modal">
-                <div class="modal-content">
-                    <span id="close-instruction" class="close">&times;</span>
-                    <p>
-                        In this quiz you will be asked 10 random questions about space. Each question answered correctly will be added to your overall score. Your score will be registered on the highscore page after you finished the game.
-                        Have fun!
-                    </p>
-                    <div id="next-div">
-                        <button id="next-button">
-                            <div id="next-text">Next!</div>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div id="modal-enter-name" class="modal">
-                <div id="name-modal" class="modal-content">
-                    <span id="close-enter-name" class="close">&times;</span>
-                    <label for="name">Enter your name:</label>
-                    <input type="text" id="name-field-id" name="name" class="name-field" required size="3" maxlength="10" />
-                    <div id="begin-button-div">
-                        <button id="begin-game-button">
-                            <a href="game.html" rel="noopener">
-                                <div id="begin-game-text">Start!</div>
-                            </a>
-                        </button>
-                    </div>
+        <div id="modal-instructions" class="modal">
+            <div class="modal-content">
+                <span id="close-instruction" class="close">&times;</span>
+                <p>
+                    In this quiz you will be asked 10 random questions about space. Each question answered correctly
+                    will be added to your overall score. Your score will be registered on the highscore page after you
+                    finished the game.
+                    Have fun!
+                </p>
+                <div id="next-div">
+                    <button id="next-button">
+                        <h2 id="next-text">Next!</h2>
+                    </button>
                 </div>
             </div>
         </div>
 
-        <script src="assets/js/script.js"></script>
-    </body>
+        <div id="modal-enter-name" class="modal">
+            <div id="name-modal" class="modal-content">
+                <span id="close-enter-name" class="close">&times;</span>
+                <label id="name-label" for="name">Enter your name:</label>
+                <input type="text" id="name-field-id" name="name" class="name-field" required size="3" maxlength="10" />
+                <div id="begin-button-div">
+                    <a href="game.html" rel="noopener">
+                        <button id="begin-game-button">
+                            <h2 id="begin-game-text">Start!</h2>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
 </html>
