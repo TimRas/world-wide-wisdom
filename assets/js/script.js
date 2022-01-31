@@ -52,13 +52,13 @@ var totalScoreTracker = 0;
 if (highScoreBody != undefined) {
     highScoreBody.addEventListener('load',(event) => {
         loadHighscores();
-    } )
+    } );
 }
 
 // Enters name value in gamer-name div when pressed start
 confirmNameButton.onclick = function () {
     localStorage.setItem("gamername", nameField.value);
-}
+};
 // Puts value of begin-button-div is gamer-name div
 function setGamerName() {
     gamerNameElement.innerHTML = localStorage.getItem("gamername");
@@ -68,7 +68,7 @@ function setGamerName() {
 function getNewQuestion() {
     if (totalQuestionTracker === 11) {
         localStorage.setItem("score", totalScoreTracker);
-        window.location = "highscore.html"
+        window.location = "highscore.html";
     } else {
         var randomQuestionIndex = randomIntBetween(0, questionLibrary.length - 1);
         while (shownQuestions.includes(randomQuestionIndex)) { 
@@ -158,7 +158,7 @@ function loadHighscores() {
                 highScores.push(highScoreEntry);
             }
         }
-    };
+    }
     highScores.sort(function (a, b) {
         return b.score - a.score;
     });
@@ -177,25 +177,18 @@ startButton.onclick = function () {
     } else {
         modalInstructions.style.display = "block";
     }
-}
+};
 
 nextButton.onclick = function () {
     modalInstructions.style.display = "none";
     modalEnterName.style.display = "block";
-}
+};
 
 // When the user clicks on <span> (x) it closes the modal
 spanInstruction.onclick = function () {
     modalInstructions.style.display = "none";
-}
+};
 
 spanEnterName.onclick = function () {
     modalEnterName.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modalInstructions.style.display = "none";
-    }
-}
+};
