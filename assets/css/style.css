@@ -471,6 +471,20 @@ label {
         font-size: small;
     }
 }
+@media screen and (min-height: 750px) {
+    #title-home {
+        margin-top: 3em;
+    }
+    #intro-text {
+        margin-top: 3em;
+    }
+    #start-button {
+        margin-top: 5em;
+    }
+    #highscore {
+        margin-top: 5em;
+    }
+}
 
 /* medias queries modals home page*/
 /* instructions modal*/
@@ -511,6 +525,11 @@ label {
         margin-top: 3em;
     }
     
+}
+@media screen and (min-height: 750px) {
+    #next-button {
+        margin-top: 8em;
+    }
 }
 @media screen and (max-width: 520px) {
     .modal-content p {
