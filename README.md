@@ -9,11 +9,11 @@ Expand your mind is a website that challenges your knowledge of the great beyond
 <strong>Navigation Bar</strong>
 <ul>
     <li>The navigation is featured on all three pages and are shown on the left side.</li>
-    <li>The navigation links are: Home and Highscore. They both link to their respective pages</li>
+    <li>The navigation links are: Home and Highscore. They both link to their respective pages.</li>
     <li>The links are shown in white and when hovered over a white line will apear underneath them. The white color and line make the navigation links easy to find behind the dark background.</li> 
 </ul>
 
-![image of the navigation bar](assets/images/assets/images/nav-bar-EYM.png)
+![image of the navigation bar](assets/images/nav-bar-EYM.png)
 
 <strong>Title and intro text</strong>
 <ul>
@@ -38,29 +38,29 @@ Expand your mind is a website that challenges your knowledge of the great beyond
 <strong>The instructions modal</strong>
 <ul>
     <li>The instructions modal pops up after the start button has been clicked and is centered in the middle of the screen.</li>
-    <li>The modal shows game related instructions and a button to move to the next modal.<li>
-    <li>The modal has a blue color, white text and a button the same as the start button</li>
+    <li>The modal shows game related instructions and a button to move to the next modal.</li>
+    <li>The modal has a blue color, white text and a button the same as the start button.</li>
 </ul>
 
 ![image of instructions modal](assets/images/instructions-EYM.png)
 
 <strong>The enter your name modal</strong>
 <ul>
-    <li>Just like the instructions modal, the enter name modal is also centered in the middle and pops up after the next button<li>
-    <li>The modal shows a input field, a enter name heading and a button</li>
-    <li>the heading is white and the button looks the same as the other ones</li>
-    <li>The name that is put into the input field will be shown on the next page in a div</li>
-    <li>After pressing the start button in the enter name modal, you will begin the quiz</li>
+    <li>Just like the instructions modal, the enter name modal is also centered in the middle and pops up after the next button.</li>
+    <li>The modal shows a input field, a enter name heading and a button.</li>
+    <li>the heading is white and the button looks the same as the other ones.</li>
+    <li>The name that is put into the input field will be shown on the next page in a div.</li>
+    <li>After pressing the start button in the enter name modal, you will begin the quiz.</li>
 </ul>
 
 ![image of enter name modal](assets/images/enter-name-EYM.png)
 
 <strong>The gamername and question counter</strong>
 <ul>
-    <li>The gamername is a box that show the name that was put in the input field</li>
+    <li>The gamername is a box that show the name that was put in the input field.</li>
     <li>The gamername is shown on the left side of the screen and the question counter on the right side.</li>
-    <li>The question counter is a box that shows the current question you are on</li>
-    <li>Both boxes have the same styling as the buttons from the previous page<li>
+    <li>The question counter is a box that shows the current question you are on.</li>
+    <li>Both boxes have the same styling as the buttons from the previous page.</li>
 </ul>
 
 ![image of gamername and counter](assets/images/gamername-counter-EYM.png)
@@ -70,7 +70,7 @@ Expand your mind is a website that challenges your knowledge of the great beyond
     <li>The question box shows a random question related to space and are centered in the middle.</li>
     <li>Its styling is the same as the buttons but bigger and uses a different font than the options.</li>
     <li>The options boxes show three options to choose from. One is the right answer. These are also centered in the middle.</li>
-    <li>The styling of the options boxes is the same as the question box but slightly smaller</li>
+    <li>The styling of the options boxes is the same as the question box but slightly smaller.</li>
 </ul>
 
 ![image of questions and options](assets/images/question-options-EYM.png)
@@ -85,7 +85,7 @@ Expand your mind is a website that challenges your knowledge of the great beyond
 
 <strong>The highscore</strong>
 <ul>
-    <li>The highscore consists of 10 boxes with all of them having the same style as the highscore heading</li>
+    <li>The highscore consists of 10 boxes with all of them having the same style as the highscore heading.</li>
     <li>Theses boxes are all centered in the middle. They are smaller than the heading.</li>
     <li>Each boxes contains a rank on the left side, the name of the user in the middle and the correct amount of answers.</li>
 </ul>
@@ -95,8 +95,8 @@ Expand your mind is a website that challenges your knowledge of the great beyond
 ## Testing
 <hr>
 <ul>
-    <li>I have confirmed that the project is responsive, looks good and that it functions on all standard screen sizes using the dev tools toolbar</li>
-    <li>I have confirmed that all text on the website is easy to understand and readable.In some cases, text at the gamername and question will pop a bit out its container</li>
+    <li>I have confirmed that the project is responsive, looks good and that it functions on all standard screen sizes using the dev tools toolbar.</li>
+    <li>I have confirmed that all text on the website is easy to understand and readable.In some cases, text at the gamername and question will pop a bit out its container.</li>
     <li>I have confirmed that the input field for gamername works and that the questions generate randomly and will not repeat twice.</li>
     <li>I have confirmed that the gamernames will show on the highscore if they reach the top 10 but if you get all questions right, your name doesnt show in the highscore.</li>
     <li> I have confirmed that all images load in properly.</li>
@@ -105,7 +105,7 @@ Expand your mind is a website that challenges your knowledge of the great beyond
 
 <strong>Bugs</strong>
 <ul>
-    <li> No bugs were found during any phase of this project</li> 
+    <li> No bugs were found during any phase of this project.</li> 
 </ul>
 
 <strong>Validator Testing</strong>
@@ -122,7 +122,7 @@ Accessability - I used lighthouse to check if the accesibility is correct.
 
 <strong>Unfixed Bugs</strong>
 <ul>
-    <li> No unfixed bugs</li>
+    <li> No unfixed bugs.</li>
 </ul>
 
 ## Deployment
