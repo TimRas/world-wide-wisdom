@@ -543,7 +543,7 @@ label {
 
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 650px) {g
     .modal-content p {
         line-height: 2em;
     }
