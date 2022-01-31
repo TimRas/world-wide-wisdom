@@ -81,12 +81,14 @@ header {
 
 #highscore {
     width: 15em;
-    height: 5em;
+    height: 3em;
     border-style: groove;
     border-color: black;
     border-radius: 15px 50px;
     background-color: gray;
     color: white;
+    display: inline-block;
+    text-align: center;
 }
 
 #highscore-div {
@@ -150,7 +152,6 @@ header {
 }
 
 #begin-game-button {
-    height: 6em;
     width: 20em;
     margin-top: 1em;
     border-radius: 50px;
@@ -158,6 +159,8 @@ header {
     border-color: black;
     background-color: gray;
     color: white;
+    display: inline-block;
+    line-height: 3em;
 }
 
 #begin-game-text {
