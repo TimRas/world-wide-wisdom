@@ -508,7 +508,7 @@ label {
         margin-top: 5em;
     }
 }
-@media screen and (min-height:1100) {
+@media screen and (min-height:1100px) {
     #highscore {
         margin-top: 1em;
     }
