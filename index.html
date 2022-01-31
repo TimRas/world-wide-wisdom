@@ -27,6 +27,7 @@
                 </ul>
             </nav>
         </header>
+
         <div class="screen-toggle">
             <h1 id="title-home">Expand your mind</h1>
             <div id="intro-text">This fun and challenging quiz will test your overall knowlegde of the great beyond.
@@ -37,7 +38,6 @@
                 ask
                 you for your username. Have fun!
             </div>
-            <!-- <a href="game.html" target="_blank" rel="noopener"> -->
 
             <div id="button-div"><button id="start-button">
                     <div id="start-text">Start!</div>
@@ -47,34 +47,33 @@
                         <div id="highscore-text">Highscore</div>
                     </button></a></div>
         </div>
-        <!-- The Modal for instruction screen-->
-        <div id="myModalInstruction" class="modal">
-            <!-- Modal content -->
+
+        <div id="modal-instructions" class="modal">
             <div class="modal-content">
-                <span id="closeInstruction" class="close">&times;</span>
+                <span id="close-instruction" class="close">&times;</span>
                 <p>In this quiz you will be asked 10 random questions about space. Each question answered correctly will
-                    be added to your overall score. Your score will be registered on the highscore page after you finished the
-                    game. You can restart or quit the game with the button below. Have fun!</p>
+                    be added to your overall score. Your score will be registered on the highscore page after you
+                    finished the
+                    game. Have fun!</p>
                 <div id="next-div"><button id="next-button">
                         <div id="next-text">Next!</div>
                     </button></div>
             </div>
         </div>
-        <!-- The Modal for enter name screen-->
-        <div id="myModalEnterName" class="modal">
-            <!-- Modal content -->
-            <div id="enter-name-modal" class="modal-content">
+
+        <div id="modal-enter-name" class="modal">
+            <div id="name-modal" class="modal-content">
                 <span id="close-enter-name" class="close">&times;</span>
                 <label for="name">Enter your name:</label>
-                <input type="text" id="namefieldid" name="name" class="name-field" required size="3" maxlength="10">
-                <div id="confirm-button-div"><button id="begin-game-button"><a href="game.html" rel="noopener">
+                <input type="text" id="name-field-id" name="name" class="name-field" required size="3" maxlength="10">
+                <div id="begin-button-div"><button id="begin-game-button"><a href="game.html" rel="noopener">
                             <div id="begin-game-text">Start!</div>
                         </a>
                     </button></div>
             </div>
         </div>
     </div>
-    
+
     <script src="assets/js/script.js"></script>
 </body>
 
